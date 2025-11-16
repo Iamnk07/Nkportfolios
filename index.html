@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Niyaz Khan — Portfolio</title>
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="index">
+
+  <!-- LOADER (Style A - progress bar + percent) -->
+  <div id="loaderWrap" class="loader-wrap" aria-hidden="false">
+    <div class="loader-card">
+      <div class="loader-title">NK Portfolio</div>
+      <div class="loader-sub">Loading portfolio...</div>
+
+      <div class="progress-wrap" aria-hidden="true">
+        <div id="loaderProgress" class="progress"></div>
+      </div>
+      <div id="loaderPercent" class="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- Background video for this page -->
+  <video id="bgVideo" class="bg-video" muted autoplay loop playsinline>
+    <source src="assets/bg1.mp4" type="video/mp4" />
+  </video>
+  <div class="bg-dim"></div>
+
+  <canvas id="particles"></canvas>
+  <div id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">NK Portfolio</a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="hero-left">
+        <div class="submono">Hello,</div>
+        <h1 class="hero-name">I'm <span class="accent">Niyaz Khan</span></h1>
+        <p class="hero-desc">Full Stack & Cloud enthusiast — web apps, automation, and DevOps practices.</p>
+
+        <div class="hero-ctas">
+          <a id="viewResumeBtn" class="btn gradient" href="assets/resume.pdf" target="_blank"><i class="fas fa-file-lines"></i> View Resume</a>
+          <a id="downloadResumeBtn" class="btn gradient" href="#"><i class="fas fa-download"></i> Download</a>
+          <a class="btn outline" href="mailto:niyaz@example.com"><i class="fas fa-paper-plane"></i> Hire Me</a>
+        </div>
+
+        <div class="social-row">
+          <a class="social" href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a class="social" href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a class="social" href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="social" href="https://wa.me/" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <a href="certificates.html" class="btn ghost">Certificates</a>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-3d" data-tilt>
+          <div class="neon-ring neon-pulse">
+            <img id="profilePhoto" src="assets/profile.jpg" alt="Niyaz" onerror="this.style.display='none';document.getElementById('avatarInitials').style.display='flex'">
+            <div id="avatarInitials" class="avatar-initials" style="display:none">NK</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-block">
+      <div class="section-head"><h2>About Me</h2></div>
+      <div class="about-split">
+        <div class="about-text">
+          <p>I’m a Full Stack Developer and Cloud/DevOps enthusiast. I build responsive web apps, automate deployments, and manage scalable infrastructure.</p>
+          <p class="muted">Interests: CI/CD, Kubernetes, Terraform, Python scripting, and performant front-end experiences.</p>
+
+          <div class="quick-contact">
+            <div><strong>Email:</strong> <a href="mailto:niyaz@example.com">niyaz.kofficials@gmail.com</a></div>
+            <div><strong>Phone:</strong> <a href="tel:+911234567890">+91 7751931035</a></div>
+          </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head"><h2>Contact</h2></div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-title">Email</div>
+          <a class="contact-link" href="mailto:niyaz@example.com"><i class="fas fa-envelope"></i> niyaz.kofficials@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-title">Phone</div>
+          <a class="contact-link" href="tel:+911234567890"><i class="fas fa-phone"></i> +91 7751931035</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-title">Social</div>
+          <div class="social-row small">
+            <a class="social" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="social" href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-foot">© <strong>Niyaz Khan</strong></footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

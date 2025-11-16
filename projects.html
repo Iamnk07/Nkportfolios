@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — Niyaz Khan</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projects">
+
+  <!-- Loader: present but main.js handles localStorage so it shows only on first overall visit -->
+  <div id="loaderWrap" class="loader-wrap" aria-hidden="true">
+    <div class="loader-card" role="status" aria-live="polite">
+      <div class="loader-title">NK Portfolio</div>
+      <div class="loader-sub">Loading Portfolio...</div>
+      <div class="progress-wrap" aria-hidden="true"><div class="progress" id="progressBar"></div></div>
+      <div class="loader-percent" id="loaderPercent">0%</div>
+    </div>
+  </div>
+
+  <video id="bgVideo" class="bg-video" muted autoplay loop playsinline>
+    <source src="assets/bg3.mp4" type="video/mp4">
+  </video>
+  <div class="bg-dim"></div>
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">NK</a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="section-head"><h2>Featured Projects</h2></div>
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+
+    <footer class="site-foot">© <strong>Niyaz Khan</strong></footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
